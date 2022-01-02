@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+      {% if request.user.id_authenticated and
+
+
+      <p>{{ post.user }} | {{ post.created|date }}</p>
+      <p>{{ post.body }}</p>
+{% endblock %}
